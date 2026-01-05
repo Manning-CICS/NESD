@@ -4,83 +4,242 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NESD: New England Security Day</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <style>
+        :root {
+            --nesd-navy: #0f3057;
+            --nesd-accent: #1c7ed6;
+            --nesd-muted: #5f6b7a;
+        }
+        * { box-sizing: border-box; }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Space Grotesk', 'Segoe UI', system-ui, -apple-system, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
+            background: #f7f9fb;
+            color: #0f1b2d;
         }
-        header {
-            background-color: #00274d;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+        a { color: var(--nesd-accent); }
         .hero {
-            width: 100%;
-            max-height: 400px;
+            background: #fff;
+            border-bottom: 1px solid #e4e9f1;
+        }
+        .hero .title { color: var(--nesd-navy); }
+        .hero .subtitle { color: var(--nesd-muted); }
+        .hero-visual {
+            border-radius: 10px;
             overflow: hidden;
+            box-shadow: 0 12px 30px rgba(15, 48, 87, 0.12);
         }
-        .hero img {
+        .hero-visual img {
             width: 100%;
+            height: 100%;
             object-fit: cover;
+            display: block;
         }
-        .content {
-            padding: 30px;
-            max-width: 800px;
-            margin: auto;
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-bottom: 0.5rem;
         }
-        .content h2 {
-            border-bottom: 2px solid #00274d;
-            padding-bottom: 10px;
+        .section-title .line {
+            width: 36px;
+            height: 2px;
+            background: var(--nesd-accent);
         }
-        .footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9em;
-            background-color: #222;
-            color: white;
+        .card {
+            box-shadow: 0 10px 30px rgba(15, 48, 87, 0.08);
         }
-        a {
-            color: #00274d;
+        footer.footer {
+            background: #0f1f34;
+            color: #dce7f5;
         }
+        footer.footer a { color: #f3f9ff; }
     </style>
 </head>
 <body>
+    <section class="hero is-medium">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column is-6">
+                        <p class="tag is-info is-light is-rounded">NESD • March 27, 2026</p>
+                        <h1 class="title is-1 mt-2">A day for security research in New England.</h1>
+                        <p class="subtitle is-4 mt-3">NESD (New England Security Day) gathers researchers, industry teams, and students to share work, swap ideas, and connect across the region.</p>
+                        <div class="buttons mt-4">
+                            <a class="button is-primary is-medium" href="#about">See details</a>
+                            <a class="button is-light is-medium" href="#contact">Get updates</a>
+                        </div>
+                    </div>
+                    <div class="column is-6">
+                        <figure class="image hero-visual">
+                            <img src="./office.jpg" alt="Interior of the Computer Science Laboratories building">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<header>
-    <h1>NESD: New England Security Day</h1>
-    <p>Welcome to the placeholder site for NESD</p>
-</header>
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <span class="line"></span>
+                <p class="has-text-weight-semibold is-uppercase is-size-7 has-text-grey">About NESD</p>
+            </div>
+            <div class="columns">
+                <div class="column is-6">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title is-4 mb-2">What is NESD?</p>
+                            <p class="has-text-grey-dark">A one-day gathering to highlight security research and applied work from New England universities, labs, and industry teams.</p>
+                            <ul class="content mt-4">
+                                <li>Keynotes and lightning talks across systems, AI safety, and cryptography.</li>
+                                <li>Student spotlights to showcase emerging projects.</li>
+                                <li>Posters and demos for hands-on discussion.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-6">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title is-4 mb-2">Venue: Computer Science Laboratories</p>
+                            <p class="has-text-grey-dark">UMass Amherst Manning College of Information and Computer Sciences. Modern lecture halls, collaboration spaces, and labs built for hands-on computing.</p>
+                            <div class="tags mt-3">
+                                <span class="tag is-info is-light">CSL E144</span>
+                                <span class="tag is-info is-light">CSL E120</span>
+                                <span class="tag is-info is-light">Atrium</span>
+                            </div>
+                            <a class="button is-link is-light mt-3" href="https://www.cics.umass.edu/" target="_blank" rel="noopener">Visit CICS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="hero">
-    <img src="https://www.cics.umass.edu/sites/default/files/styles/scale_width_1600/public/2025-10/CSL_building_interior.jpg?itok=example" alt="UMass Computer Science Laboratories">
-    <!-- Replace above URL with an actual image URL hosted on your repo if needed -->
-</section>
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <span class="line"></span>
+                <p class="has-text-weight-semibold is-uppercase is-size-7 has-text-grey">Program Snapshot</p>
+            </div>
+            <div class="columns">
+                <div class="column is-7">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title is-4 mb-3">Day flow</p>
+                            <ul class="content">
+                                <li><strong>Morning:</strong> Welcome remarks, keynote talks, and a regional panel.</li>
+                                <li><strong>Midday:</strong> Lightning talks, poster walk-throughs, and demos in the labs.</li>
+                                <li><strong>Afternoon:</strong> Breakouts on secure systems, privacy, and AI safety.</li>
+                                <li><strong>Evening:</strong> Community mixer to keep conversations going.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-5">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title is-5 mb-2">What to bring</p>
+                            <ul class="content">
+                                <li>Research or project highlights you want to discuss.</li>
+                                <li>Ideas for collaborations or student opportunities.</li>
+                                <li>Curiosity—this is a friendly, practical crowd.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="content">
-    <h2>About the Venue</h2>
-    <p>
-        The <strong>Computer Science Laboratories (CSL)</strong> building at <a href="https://www.cics.umass.edu/">UMass Amherst Manning College of Information and Computer Sciences</a> is a newly opened facility that brings collaborative study,
-        research labs, and state-of-the-art space to students and faculty. The 90,000+ sq. ft. facility includes maker spaces, lounges, lecture halls, and environments designed for hands-on computing education and innovation. :contentReference[oaicite:0]{index=0}
-    </p>
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <span class="line"></span>
+                <p class="has-text-weight-semibold is-uppercase is-size-7 has-text-grey">Registration & Submissions</p>
+            </div>
+            <div class="columns">
+                <div class="column is-6">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title is-4 mb-2">Registration</p>
+                            <ul class="content">
+                                <li>Registration is free.</li>
+                                <li>All can express interest; approvals will be issued (external participants get priority).</li>
+                                <li>Parking: pay-as-you-go guest parking at the Campus Center.</li>
+                            </ul>
+                            <p class="has-text-grey">We will open the form shortly and confirm attendees via email.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-6">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title is-4 mb-2">Submissions</p>
+                            <ul class="content">
+                                <li>Submissions will be reviewed.</li>
+                                <li>Collection via Google Form + Google Drive uploads.</li>
+                                <li>Invited speaker: NSF SaTC folks.</li>
+                            </ul>
+                            <p class="has-text-grey">Details and links will appear here once the forms go live.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h2>About NESD</h2>
-    <p>
-        This placeholder site represents the upcoming New England Security Day (NESD). More details about speakers, topics, and scheduling will be added in the coming days. Stay tuned for updates and session descriptions.
-    </p>
+   
 
-    <h2>Contact & Social</h2>
-    <p>
-        For inquiries about NESD or this site, contact the organizer or check back soon for updates.
-    </p>
-</section>
+   
 
-<footer class="footer">
-    &copy; 2025 NESD • Site hosted on GitHub Pages
-</footer>
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-title">
+                <span class="line"></span>
+                <p class="has-text-weight-semibold is-uppercase is-size-7 has-text-grey">Stay Connected</p>
+            </div>
+            <div class="columns">
+                <div class="column is-7">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title is-4 mb-2">Want updates?</p>
+                            <p class="has-text-grey-dark">Check back for speaker announcements, registration details, and the final agenda. If you’re organizing a talk or demo, let us know.</p>
+                            <div class="buttons mt-3">
+                                <a class="button is-primary is-medium" href="mailto:eugene@cs.umass.edu;pubali@cs.umass.edu">Email the organizers</a>
+                                <a class="button is-light is-medium" href="#about">Program overview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-5">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="title is-5 mb-2">Quick notes</p>
+                            <ul class="content">
+                                <li>Date: March 27, 2026.</li>
+                                <li>Parking at Campus Center (guest rates apply).</li>
+                                <li>Venue: CSL E144, E120, and Atrium, UMass Amherst.</li>
+                                <li>Hosted with the Manning College of Information and Computer Sciences.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p class="has-text-light">© 2026 NESD • New England Security Day • Built with Bulma</p>
+            <p><a href="https://www.cics.umass.edu/" target="_blank" rel="noopener">Manning CICS</a></p>
+        </div>
+    </footer>
 </body>
 </html>
