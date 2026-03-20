@@ -86,7 +86,9 @@
                         <p class="subtitle is-4 mt-3">NESD (New England Security Day) gathers researchers, industry teams, and students to share work, swap ideas, and connect across the region.</p>
                         <div class="buttons mt-4">
                             <a class="button is-primary is-medium" href="https://forms.gle/4VUHEBYKWZhJx1s27" target="_blank" rel="noopener">Register now</a>
-                            <a class="button is-light is-medium" href="#about">See details</a>
+                            <a class="button is-light is-medium"
+                            href="#about">See details</a>
+                            <!--p class="has-text-grey-dark">There is no cost to attend.</p-->
                         </div>
                     </div>
                     <div class="column is-6">
@@ -110,10 +112,12 @@
                     <div class="card">
                         <div class="card-content">
                             <p class="title is-4 mb-2">What is NESD?</p>
-                            <p class="has-text-grey-dark">A one-day gathering to highlight security research and applied work from New England universities, labs, and industry teams.</p>
+                            <p class="has-text-grey-dark">A one-day gathering to
+                            highlight security research and applied work from
+                            New England universities, labs, and industry teams.
+                            </p>
                             <ul class="content mt-4">
                                 <li>Keynotes and lightning talks across systems, AI safety, and cryptography.</li>
-                                <li>Student spotlights to showcase emerging projects.</li>
                                 <li>Posters and demos for hands-on discussion.</li>
                             </ul>
                         </div>
@@ -123,13 +127,23 @@
                     <div class="card">
                         <div class="card-content">
                             <p class="title is-4 mb-2">Venue: Computer Science Laboratories</p>
-                            <p class="has-text-grey-dark">UMass Amherst Manning College of Information and Computer Sciences. Modern lecture halls, collaboration spaces, and labs built for hands-on computing.</p>
+                            <p class="has-text-grey-dark">UMass Amherst Manning
+                            College of Information and Computer Sciences
+                           <a
+                           href="https://maps.app.goo.gl/fQHDuFbNrcwH1Bgo7">(Map)</a>. 
+                           
+                           Modern lecture halls, collaboration spaces, and labs
+                            built for hands-on computing.</p>
                             <div class="tags mt-3">
                                 <span class="tag is-info is-light">CSL E144</span>
-                                <span class="tag is-info is-light">CSL E120</span>
+                                <!--span class="tag is-info is-light">CSL E120</span-->
                                 <span class="tag is-info is-light">Atrium</span>
                             </div>
-                            <a class="button is-link is-light mt-3" href="https://www.cics.umass.edu/" target="_blank" rel="noopener">Visit CICS</a>
+                            <div class="buttons mt-3">
+                                <a class="button is-link is-light" href="https://www.cics.umass.edu/" target="_blank" rel="noopener">Visit CICS</a>
+                                <!-- ADD THIS BUTTON -->
+                                <a class="button is-info is-light" href="https://www.cics.umass.edu/about/visiting-cics" target="_blank" rel="noopener">🗺️ Driving Directions</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -138,47 +152,174 @@
     </section>
 
     <section class="section">
-        <div class="container">
-            <div class="section-title">
-                <span class="line"></span>
-                <p class="has-text-weight-semibold is-uppercase is-size-7 has-text-grey">Program Snapshot</p>
-            </div>
-            <div class="columns">
-                <div class="column is-7">
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="title is-4 mb-3">Tentative Agenda</p>
-                            <table class="table is-fullwidth is-striped">
-                                <tbody>
-                                    <tr><td><strong>9:00 AM</strong></td><td>Registration &amp; Breakfast</td></tr>
-                                    <tr><td><strong>10:00 AM</strong></td><td>Opening Remarks</td></tr>
-                                    <tr><td><strong>10:15 AM</strong></td><td>Keynote</td></tr>
-                                    <tr><td><strong>11:00 AM – 12:30 PM</strong></td><td>Session 1</td></tr>
-                                    <tr><td><strong>12:30 PM</strong></td><td>Lunch</td></tr>
-                                    <tr><td><strong>1:00 PM – 2:00 PM</strong></td><td>Poster Session</td></tr>
-                                    <tr><td><strong>2:00 PM – 3:00 PM</strong></td><td>Session 2</td></tr>
-                                    <tr><td><strong>3:00 PM – 4:00 PM</strong></td><td>Session 3</td></tr>
-                                    <tr><td><strong>4:00 PM – 4:10 PM</strong></td><td>Closing Remarks</td></tr>
-                                    <tr><td><strong>4:15 PM – 5:15 PM</strong></td><td>Reception</td></tr>
-                                </tbody>
-                            </table>
-                        </div>
+    <div class="container">
+        <div class="section-title">
+            <span class="line"></span>
+            <p class="has-text-weight-semibold is-uppercase is-size-7 has-text-grey">Program Snapshot</p>
+        </div>
+        <!--div class="columns"-->
+            <!--div class="column is-7"-->
+
+                <!-- Main Agenda Table -->
+                <div class="card">
+                    <div class="card-content">
+                        <p class="title is-4 mb-3">Detailed Schedule</p>
+                        <p class="has-text-grey mb-3">📅 March 27, 2026 | UMass Amherst — CSL E144 &amp; Atrium</p>
+                        <table class="table is-fullwidth is-striped">
+                            <tbody>
+                                <tr><td><strong>9:00 AM – 10:00 AM</strong></td><td>Registration &amp; Breakfast</td></tr>
+                                <tr><td><strong>10:00 AM – 10:15 AM</strong></td><td>Opening Remarks</td></tr>
+                                <tr><td><strong>10:15 AM – 11:00 AM</strong></td><td>Keynote: <em>Exploring New Frontiers in Hardware and Systems Security</em> — Dr. Qiaoyan Yu (NSF SaTC Program Director, CISE/CNS)</td></tr>
+                                <tr><td><strong>11:00 AM – 12:30 PM</strong></td><td>Session 1: Systems, Networks &amp; Cryptography</td></tr>
+                                <tr><td><strong>12:30 PM – 2:00 PM</strong></td><td>Lunch</td></tr>
+                                <tr><td><strong>1:00 PM – 2:00 PM</strong></td><td>Poster Session</td></tr>
+                                <tr><td><strong>2:00 PM – 3:00 PM</strong></td><td>Session 2: Hardware Security &amp; Side-Channel Attacks</td></tr>
+                                <tr><td><strong>3:00 PM – 4:00 PM</strong></td><td>Session 3: Adversarial Machine Learning &amp; AI Security</td></tr>
+                                <tr><td><strong>4:00 PM – 4:15 PM</strong></td><td>Closing Remarks</td></tr>
+                                <tr><td><strong>4:15 PM – 5:15 PM</strong></td><td>Reception (Optional Poster Discussion)</td></tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <div class="column is-5">
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="title is-5 mb-2">What to bring</p>
-                            <ul class="content">
-                                <li>Research or project highlights you want to discuss.</li>
-                                <li>Ideas for collaborations or student opportunities.</li>
-                            </ul>
-                        </div>
+
+                <!-- Food & Refreshments: Full Width -->
+        <div class="card">
+            <div class="card-content">
+                <p class="title is-5 mb-3">🍽️ Food &amp; Refreshments</p>
+                <div class="columns">
+                    <div class="column is-4">
+                        <p>🥐 <strong>Breakfast</strong></p>
+                        <p class="has-text-grey is-size-7">Provided during registration (9:00 – 10:00 AM)</p>
+                    </div>
+                    <div class="column is-4">
+                        <p>🥗 <strong>Lunch</strong></p>
+                        <p class="has-text-grey is-size-7">Provided from 12:30 PM</p>
+                    </div>
+                    <div class="column is-4">
+                        <p>☕ <strong>Light Refreshments</strong></p>
+                        <p class="has-text-grey is-size-7">Provided during reception</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+
+                <!-- Session 1 -->
+                <div class="card mt-4">
+                    <div class="card-content">
+                        <p class="title is-5 mb-3">Session 1 (11:00 AM – 12:30 PM): Systems, Networks &amp; Cryptography</p>
+                        <table class="table is-fullwidth is-striped is-narrow">
+                            <thead>
+                                <tr>
+                                    <th style="width:2rem">#</th>
+                                    <th style="width:35%">Speaker</th>
+                                    <th>Title</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td><td>Ben Weintraub</td><td>Exploiting Temporal Vulnerabilities for Unauthorized Access in Intent-Based Networking</td></tr>
+                                <tr><td>2</td><td>Giannis Kaklamanis</td><td>Verifiable Aggregate Receipts with Applications to User Engagement Auditing</td></tr>
+                                <tr><td>3</td><td>Amna Gillani</td><td>Covert Routing in Heterogeneous Wireless Networks with Friendly Jamming</td></tr>
+                                <tr><td>4</td><td>Trevor Thomas</td><td>Improving Quantum Conference Key Agreement over Networks</td></tr>
+                                <tr><td>5</td><td>Sage Pia</td><td>Oblivious Single Access Machines</td></tr>
+                                <tr><td>6</td><td>Amey Shukla</td><td>Sample-then-Correct: How to Amplify Fuzzy Extraction for Biometrics and Other Noisy Data</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Session 2 -->
+                <div class="card mt-4">
+                    <div class="card-content">
+                        <p class="title is-5 mb-3">Session 2 (2:00 PM – 3:00 PM): Hardware Security &amp; Side-Channel Attacks</p>
+                        <table class="table is-fullwidth is-striped is-narrow">
+                            <thead>
+                                <tr>
+                                    <th style="width:2rem">#</th>
+                                    <th style="width:35%">Speaker</th>
+                                    <th>Title</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td><td>Haowen Xu</td><td>Electromagnetic (EM) Side-Channel Attacks on Modern Systems</td></tr>
+                                <tr><td>2</td><td>Chandra Sekhar Mummidi</td><td>Exploiting BRAM Data Remanence for Cross-Tenant Attacks</td></tr>
+                                <tr><td>3</td><td>Muhammad Faheemur Rahman</td><td>3D Stacked Memristive Crossbars for Model Confidentiality in Analog In-Memory Computing</td></tr>
+                                <tr><td>4</td><td>Neophytos Christou</td><td>Eclipse: Preventing Speculative Memory-error Abuse with Artificial Data Dependencies</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Session 3 -->
+                <div class="card mt-4">
+                    <div class="card-content">
+                        <p class="title is-5 mb-3">Session 3 (3:00 PM – 4:00 PM): Adversarial Machine Learning &amp; AI Security</p>
+                        <table class="table is-fullwidth is-striped is-narrow">
+                            <thead>
+                                <tr>
+                                    <th style="width:2rem">#</th>
+                                    <th style="width:35%">Speaker</th>
+                                    <th>Title</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td><td>Ethan Rathbun</td><td>How to Backdoor Reinforcement Learning</td></tr>
+                                <tr><td>2</td><td>Georgios Syros</td><td>Toward Automated Holistic Red-Teaming of Web Agents</td></tr>
+                                <tr><td>3</td><td>Tushin Mallick</td><td>Planning as Policy: Securing Agents against Untrusted Tools</td></tr>
+                                <tr><td>4</td><td>Aayushi Verma</td><td>Busting the Paper Ballot: Voting Meets Adversarial Machine Learning</td></tr>
+                                <tr><td>5</td><td>Subek Acharya</td><td>Evaluating Black Box Adversarial Robustness of ML Models in Election Systems</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Poster Session -->
+                <div class="card mt-4">
+                    <div class="card-content">
+                        <p class="title is-5 mb-3">Poster Session (1:00 PM –
+                        2:00 PM and afternoon reception)</p>
+                        <ul class="content">
+                            <li>Automated Access Control Policy Generation Using LLMs</li>
+                            <li>Measuring the Risk of Exposed Configurations in Serverless Environment</li>
+                            <li>SATELLES: Secure RISC-V SoC Architecture for Implantable Neurostimulators</li>
+                            <li>MeanSparse: Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification</li>
+                            <li>US Coast Guard Academy (USCGA1) eCTF 2026</li>
+                            <li>PrivLess: Over-privilege Analysis of Security Policies in Serverless Cloud Applications</li>
+                            <li>PainNOVA: Privacy-Aware Voice-Based Pain-Level Detection</li>
+                            <li>CensorLab: A Testbed for Censorship Experiments</li>
+                            <li>Privacy Leakage in In-Sensor Computing (ISC) Systems</li>
+                            <li>On the Numerical Instability of Fine-Tuning Language Models in Secure Multi-Party Computation</li>
+                            <li>CTng: Next Generation Public Key Infrastructure</li>
+                            <li>3D/N-tier Stacked Memristive Crossbars for Model
+                            Confidentiality in Analog In-Memory Computing</li>
+                            <li>TBRD: Tesla Authenticated Broadcast Remote
+                            ID</li>
+                            <li>Security Analysis of LTE Connectivity in
+                            Connected Cars: A Case Study of Tesla</li>
+                            <li>Analyzing Physical Adversarial Example Threats
+                            to Machine Learning in Election Systems</li>
+                            <li>Affordable Censorship Bypass System Using Serverless Functions</li>
+                        </ul>
+                    </div>
+                </div>
+
+            <!--/div-->
+
+            <!-- Side Column
+            <div class="column is-5">
+                <div class="card">
+                    <div class="card-content">
+                        <p class="title is-5 mb-2">What to bring</p>
+                        <ul class="content">
+                            <li>Research or project highlights you want to discuss.</li>
+                            <li>Ideas for collaborations or student opportunities.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+
+        <!--/div-->
+    </div>
+</section>
 
     <section class="section">
         <div class="container">
@@ -205,29 +346,34 @@
             <div class="columns">
                 <div class="column is-6">
                     <div class="card">
-                        <div class="card-content">
-                            <p class="title is-4 mb-2">Registration</p>
-                            <div class="columns is-vcentered">
-                                <div class="column is-7">
-                                    <ul class="content">
-                                        <li>Registration is free.</li>
-                                        <li>Express your interest! External participants and posters get priority.</li>
-                                    </ul>
-                                    <p class="has-text-grey">Registration is open now; confirmations will be sent via email.</p>
-                                    <a class="button is-primary is-light mt-3" href="https://forms.gle/4VUHEBYKWZhJx1s27" target="_blank" rel="noopener">Register now</a>
-                                </div>
-                                <div class="column is-5 has-text-centered">
-                                    <p class="has-text-grey has-text-weight-semibold is-uppercase is-size-7">Scan to register</p>
-                                    <figure class="image is-inline-block registration-qr">
-                                        <img src="./register-qr.png" alt="QR code for NESD registration form">
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="card-content">
+        <p class="title is-4 mb-2">Registration</p>
+        <div class="columns is-vcentered">
+            <div class="column is-7">
+                <!-- ADD THIS TAG -->
+                <p class="mb-3">
+                    <span class="tag is-success is-medium">🎟️ Free to attend — there is no cost to attend NESD 2026</span>
+                </p>
+                <ul class="content">
+                    <li>Registration is free.</li>
+                    <li>Express your interest! External participants get priority.</li>
+                </ul>
+                <p class="has-text-grey">Registration is open for attendance
+                (Submissions are closed).</p>
+                <a class="button is-primary is-light mt-3" href="https://forms.gle/4VUHEBYKWZhJx1s27" target="_blank" rel="noopener">Register now</a>
+            </div>
+            <div class="column is-5 has-text-centered">
+                <p class="has-text-grey has-text-weight-semibold is-uppercase is-size-7">Scan to register</p>
+                <figure class="image is-inline-block registration-qr">
+                    <img src="./register-qr.png" alt="QR code for NESD registration form">
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
                 </div>
                 <div class="column is-6">
-                    <div class="card">
+                    <!--div class="card">
                         <div class="card-content">
                             <p class="title is-4 mb-2">Parking</p>
                             <ul class="content">
@@ -237,8 +383,38 @@
                                 <li>Allow extra time to walk from the parking garage to the CS labs.</li>
                             </ul>
                         </div>
-                    </div>
-                </div>
+                    </div-->
+                
+                <div class="card">
+    <div class="card-content">
+        <p class="title is-4 mb-2">Parking</p>
+        <ul class="content">
+            <li>
+                <strong>Location:</strong> Guest parking is available at the
+                <a href="https://www.umass.edu/transportation/parking/parking-center-garage" target="_blank" rel="noopener"><strong>Campus Center Garage</strong></a>
+                or metered parking spaces
+                (designated as pink areas in
+                <a href="https://maps.umass.edu/portal/apps/experiencebuilder/experience/?id=54cb4f1c280441b39b63f08a86da9ae2" target="_blank" rel="noopener">this map</a>).
+            </li>
+            <li>
+                <strong>Rate:</strong> $1.85 per hour, paid in advance.
+            </li>
+            <li>
+                <strong>Extensions:</strong> Parking time can be extended via the
+                <strong>ParkMobile app</strong> or the on-site kiosk.
+            </li>
+            <li>
+                ⚠️ <strong>Important:</strong> A <strong>$20.00 violation fee</strong>
+                is charged if your time expires — please budget your parking time accordingly.
+            </li>
+            <li>
+                🚶 <strong>Note:</strong> Please allow extra time to walk from the
+                parking garage to the CSL building when planning your arrival.
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
             </div>
         </div>
     </section>
@@ -258,9 +434,10 @@
                     <div class="card">
                         <div class="card-content">
                             <p class="title is-4 mb-2">Want updates?</p>
-                            <p class="has-text-grey-dark">Check back for speaker announcements, registration details, and the final agenda. If you’re organizing a talk or demo, let us know.</p>
+                            <p class="has-text-grey-dark">If you have a question
+                            or want to connect, please let us know.</p>
                             <div class="buttons mt-3">
-                                <a class="button is-primary is-medium" href="mailto:eugene@cs.umass.edu;pubali@cs.umass.edu">Email the organizers</a>
+                                <a class="button is-primary is-medium" href="mailto:pdatta@umass.edu">Email the organizers</a>
                                 <a class="button is-light is-medium" href="#about">Program overview</a>
                             </div>
                         </div>
